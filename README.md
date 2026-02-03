@@ -26,6 +26,10 @@ Check out the neutron flux evolution video:
 [Watch the video](flux_animation.mp4)
 ## Depletion Step Animation
 ![Deplete GIF](flux-depletion-steps/mesh_animation.gif)
+
+## Flux XZ Burnup Step Animation
+![Deplete GIF](fuel-pin-simulation/combined_video.gif)
+
 ## Author
 **Emil Mammadzada**  
  
