@@ -19,16 +19,16 @@ def load(path, size):
 
 for i in range(1, n_steps + 1):
 
-    # Sol taraf
+    # Left
     keff_burnup = load(f"keff_burnup_{i:03d}.png", (360, 540))
     keff_time   = load(f"keff_time_{i:03d}.png",   (360, 540))
     left = np.vstack((keff_burnup, keff_time))
 
-    # Sağ taraf (tam yükseklik)
+    # Right
     flux = load(f"flux_xz_step{i}.png", (360, 1080))
     heat = load(f"heat_xz_step{i}.png", (360, 1080))
 
-    # Birleştir
+    # Combined 
     frame = np.hstack((left, flux, heat))
 
     video.write(frame)
