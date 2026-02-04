@@ -23,7 +23,7 @@ power_MW = 0.06 #MW
 # Burnup [MWd/kgHM]
 burnup = (power_MW * days) / hm_mass
 
-# Nominal değerler ve belirsizlikler
+# Nominal values and uncertainty
 keff_nom = unp.nominal_values(openmc_keff)
 keff_std = unp.std_devs(openmc_keff)
 
